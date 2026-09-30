@@ -7,11 +7,11 @@
 
 **dsh-show-balance**: Show account balance directly in the status bar. 【For: deepseek-harness-v0.2.0-rc.2】
 
+![Account balance in the English UI](images/en-show-balance.png)
+
 It adds one cell left of the shipped session-statistics strip — or left of the prefill-speed cell when
 that plugin is installed — showing the wallet balance, and opens a panel with the recharge, granted
 and total figures. The cell renders nothing while the account is signed out.
-
-![Account balance in the English UI](images/en-show-balance.png)
 
 ## Install
 
@@ -24,7 +24,7 @@ snapshotted when the boot graph is composed, so a page refresh is not enough.
    or the `plugin_manager` agent tool), or run this inside `<dsh home>/profiles/<profile>`:
 
    ```sh
-   pnpm add dsh-show-balance@0.2.0-rc.2   # drop @… once a stable release exists
+   pnpm add dsh-show-balance@0.2.0-rc.2
    ```
 
 2. Check that the package name is listed in `dsh.profile.bundles` in that profile's `package.json`
@@ -34,7 +34,7 @@ snapshotted when the boot graph is composed, so a page refresh is not enough.
 **B. From this repository** — source, offline, or a version npm does not serve:
 
 ```sh
-pwsh -File .\install.ps1               # Windows: link this checkout
+pwsh -File .\install.ps1               # Windows
 sh ./install.sh                        # macOS / Linux
 pwsh -File .\install.ps1 -From npm     # …or install the published package instead
 pwsh -File .\install.ps1 -From npm -Ref 0.2.0-rc.2   # …pinned, as a prerelease-only release needs
