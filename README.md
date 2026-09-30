@@ -1,3 +1,10 @@
+# dsh-show-balance
+
+<p align="center">
+  <sub>by <a href="https://github.com/stefanohe">Stefano's AI Lab</a></sub>
+  <br>
+</p>
+
 **dsh-show-balance**: Show account balance directly in the status bar. 【For: deepseek-harness-v0.2.0-rc.2】
 
 It adds one cell left of the shipped session-statistics strip — or left of the prefill-speed cell when
@@ -77,6 +84,7 @@ nothing, because a stale or invented number would be worse than an absent one.
 
 ## Notes
 
+* Runs inside [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 * Amounts are shown with two decimals; Platform's full decimal precision is not displayed.
 * The granted balance is a separate row and is not part of the headline figure, matching the shipped
   account page's separation of recharge and granted wallets.
@@ -153,6 +161,7 @@ pwsh -File .\install.ps1 -From npm -Ref 0.2.0-rc.2   # 只有预发布版时必�
 
 ## 说明
 
+* 运行在 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 里。
 * 金额显示两位小数，不展示开放平台返回的完整精度。
 * 赠金是单独一行、不计入格子上的主数字，与出货账号页把「充值/赠金」分开的口径一致。
 * 非官方插件，只使用公开接口（账号 Remote 与 `conversation.composer.dock` 槽位）。
